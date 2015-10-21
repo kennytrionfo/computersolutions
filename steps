@@ -1,0 +1,21 @@
+Steps to build a simple angular app:
+
+Create a js file and define an angular app by creating and naming the angular module that your going to use in it.
+	touch angular_practice.js
+	var app = angular.module("name_of_your_module", []);
+
+Code up a simple html page.
+
+Instantiate your module / tell angular where in the DOM tree your app lives and owns / allow your app module to run all of it's functions by putting the ng-app directive in the html element tag in the DOM in your html file. 
+	In <html> for example: 
+	ng-app="name_of_your_app"
+
+Allow your html page to use the reference your js file as well as the angularjs library and any others that you might need to use like jquery, bootstrap etc. 
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="name_of_your_jsfile.js"></script>
+
+
+
+
