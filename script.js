@@ -1,6 +1,6 @@
-var app = angular.module("computer",['ngRoute'])
+var app = angular.module("computer",['ngRoute']);
 
-.config(['$routeProvider', function($routeProvider){
+app.config(['$routeProvider', function($routeProvider){
   $routeProvider.
     when('/main',{
       templateUrl: 'main.html', 
@@ -8,7 +8,7 @@ var app = angular.module("computer",['ngRoute'])
     });
 }])
 
-.controller('MainCtrl',[function(){
+app.controller('MainCtrl',[function(){
   console.log('This is the main controller'); 
 
 }]);
