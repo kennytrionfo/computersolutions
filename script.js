@@ -27,8 +27,10 @@ var app = angular.module("computer",['ngRoute'])
 
 }])
 
-.controller('ServicesCtrl',['$scope', function($scope){
-
+.controller('ServicesCtrl',['$scope', '$http', function($scope, $http){
+	$http.get('services.json').then(function(response){
+		console.log(response);
+	});
 }])
 
 .controller('ContactCtrl',['$scope', function($scope){
