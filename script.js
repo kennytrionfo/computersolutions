@@ -24,7 +24,13 @@ var app = angular.module("computer",['ngRoute'])
 }])
 
 .controller('MainCtrl',['$scope', function($scope){
-  $scope.person = 'Don Joe';
-  console.log($scope); 
 
-}]);
+}])
+
+.controller('ServicesCtrl',['$scope', function($scope){
+
+}])
+
+.controller('ContactCtrl',['$scope', function($scope){
+
+}])
