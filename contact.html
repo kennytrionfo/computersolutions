@@ -1,21 +1,11 @@
-<h2>Contact</h2>  
-<p>Please email support@somethingfake.com</p>
-<h3>Locations</h3>
-<ul class="location">
-  <li>Some location</li>
-  <li>234 street </li>
-  <li>city, ST 123429</li>
-  <li>234-23423412</li>
-</ul>
-<ul class="location">
-  <li>Second location</li>
-  <li>234 street </li>
-  <li>city, ST 123429</li>
-  <li>234-23423412</li>
-</ul>
-<ul class="location">
-  <li>Third location</li>
-  <li>234 street </li>
-  <li>city, ST 123429</li>
-  <li>234-23423412</li>
-</ul>
+  <h2>Contact</h2>  
+  <p>Please email support@somethingfake.com</p>
+  <h3>Locations</h3>
+<div ng-repeat="location in locations " >
+  <ul class="location">
+    <li>{{location.location}} </li>
+    <li>{{location.street}}</li>
+    <li>{{location.city}}, {{location.state}} {{location.zipcode}} </li>
+    <li>{{location.phone}} </li>
+  </ul>
+</div>

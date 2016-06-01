@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"location": "Burlington Mall", 
+		"street": "123 My Street", 
+		"city": "Burlington", 
+		"zipcode": 23435,
+		"state": "FL",
+		"phone": "23-2-34933"
+	},
+	{ 
+		"id": 2,
+		"location": "Simple Place", 
+		"street": "343 Funky Street", 
+		"city": "Oprah Town", 
+		"zipcode": 23435,
+		"state": "FL",
+		"phone": "3334333"
+	},
+	{
+		"id": 3,
+		"location": "New Place", 
+		"street": "1df23 Your Street", 
+		"city": "His and Hers", 
+		"zipcode": 3223435,
+		"state": "FL",
+		"phone": "66564-4933"
+	}
+
+]
