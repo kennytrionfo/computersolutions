@@ -1,14 +1,30 @@
-var app = angular.module("computer",['ngRoute']);
+"use strict";
 
-app.config(['$routeProvider', function($routeProvider){
+var app = angular.module("computer",['ngRoute'])
+
+.config(['$routeProvider', function($routeProvider){
   $routeProvider.
     when('/main',{
       templateUrl: 'main.html', 
       controller:'MainCtrl'
-    });
+    }).
+    when('/about',{
+      templateUrl: 'about.html', 
+      controller:'MainCtrl'
+    }).
+    when('/services',{
+      templateUrl: 'services.html', 
+      controller:'ServicesCtrl'
+    }).
+    when('/contact',{
+      templateUrl: 'contact.html', 
+      controller:'ContactCtrl'
+    }).
+    otherwise({redirectTo:'/main'})
 }])
 
-app.controller('MainCtrl',[function(){
-  console.log('This is the main controller'); 
+.controller('MainCtrl',['$scope', function($scope){
+  $scope.person = 'Don Joe';
+  console.log($scope); 
 
 }]);
