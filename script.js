@@ -23,8 +23,10 @@ var app = angular.module("computer",['ngRoute'])
     otherwise({redirectTo:'/main'})
 }])
 
-.controller('MainCtrl',['$scope', function($scope){
-
+.controller('MainCtrl',['$scope', '$http', function($scope, $http){
+	$http.get('solutions.json').then(function(response){
+		$scope.solutions = response.data;
+	});
 }])
 
 .controller('ServicesCtrl',['$scope', '$http', function($scope, $http){
